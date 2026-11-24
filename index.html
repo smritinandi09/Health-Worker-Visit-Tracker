@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CareTrack - Dashboard</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="app">
+<aside class="sidebar">
+    <div class="brand">
+        <div class="brand-icon">✚</div>
+        <div><h2>CareTrack</h2><p>Community Health</p></div>
+    </div>
+    <p class="menu-title">MAIN MENU</p>
+    <a class="nav-link active" href="index.html">▦ Dashboard</a>
+    <a class="nav-link" href="households.html">♧ Households</a>
+    <a class="nav-link" href="visits.html">♡ Visit Records</a>
+    <a class="nav-link" href="schedule.html">▣ Schedule Visit</a>
+    <a class="nav-link" href="reports.html">▤ Reports</a>
+    <div class="sidebar-bottom">● Offline-friendly storage</div>
+</aside>
+
+<main class="main">
+    <header class="topbar">
+        <div>
+            <p>COMMUNITY HEALTH SERVICES</p>
+            <h1>Dashboard</h1>
+        </div>
+        <div class="date-box" id="todayDate"></div>
+    </header>
+
+    <div class="heading">
+        <h2>Welcome to CareTrack 👋</h2>
+        <p>Manage household visits and follow-up activities.</p>
+    </div>
+
+    <div class="stats">
+        <div class="stat-card">
+            <p>Total Households</p>
+            <h2 id="totalHouseholds">0</h2>
+            <small>Registered households</small>
+        </div>
+        <div class="stat-card">
+            <p>Today's Visits</p>
+            <h2 id="visitsToday">0</h2>
+            <small>Scheduled for today</small>
+        </div>
+        <div class="stat-card">
+            <p>Pending Visits</p>
+            <h2 id="pendingVisits">0</h2>
+            <small>Waiting to be completed</small>
+        </div>
+        <div class="stat-card">
+            <p>Follow-ups</p>
+            <h2 id="followUps">0</h2>
+            <small>Need further attention</small>
+        </div>
+    </div>
+
+    <div class="panel">
+        <h3>Upcoming Visits</h3>
+        <div id="upcomingList"></div>
+    </div>
+
+    <div class="panel">
+        <h3>Quick Actions</h3>
+        <a href="households.html"><button class="primary-btn">Add Household</button></a>
+        <a href="schedule.html"><button class="secondary-btn">Schedule Visit</button></a>
+        <a href="reports.html"><button class="secondary-btn">View Reports</button></a>
+    </div>
+
+    <footer>CareTrack · Community Health Visit Management</footer>
+</main>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
